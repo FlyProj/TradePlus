@@ -84,7 +84,7 @@ public abstract class Extra implements Listener {
     if (mode.equals("chat")) {
       trade.setCancelOnClose(player, false);
       player.closeInventory();
-      player.sendMessage(MsgUtils.color(pl.config.getString("extras.type.input", "&aInput your trade amount")));
+      player.sendMessage(MsgUtils.color(pl.getConfig.getString("extras.type.input", "&aInput your trade amount")));
       Conversation convo =
           new ConversationFactory(pl)
               .withPrefix(
