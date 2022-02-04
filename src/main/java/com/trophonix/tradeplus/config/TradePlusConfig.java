@@ -84,6 +84,7 @@ public class TradePlusConfig {
       extrasTypeEmpty,
       extrasTypeValid,
       extrasTypeInvalid,
+      extrasTypeInput,
       extrasTypeMaximum;
   private boolean factionsAllowTradeInEnemyTerritory, worldguardTradingFlag;
   private boolean soundEffectsEnabled,
@@ -221,6 +222,8 @@ public class TradePlusConfig {
         MsgUtils.color(config.getString("extras.type.invalid", "&cInvalid amount entered!"));
     extrasTypeMaximum =
         MsgUtils.color(config.getString("extras.type.maximum", "&cYou have %BALANCE% %EXTRA%"));
+    extrasTypeInput =
+        MsgUtils.color(config.getString("extras.type.input", "&aInput your trade amount"));
 
     factionsAllowTradeInEnemyTerritory =
         config.getBoolean("hooks.factions.allow-trades-in-enemy-territory", false);
@@ -600,6 +603,7 @@ public class TradePlusConfig {
       config.set("extras.type.valid", "&aClick output slot to submit offer.");
       config.set("extras.type.invalid", "&cInvalid amount entered!");
       config.set("extras.type.maximum", "&cYou have %BALANCE% %EXTRA%");
+      config.set("extras.type.input", "&aInput your trade amount");
 
       config.set("extras.economy.enabled", true);
       config.set("extras.economy.name", "money");
