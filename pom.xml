@@ -187,7 +187,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.github.Ben12345rocks</groupId>
+            <groupId>com.bencodez</groupId>
             <artifactId>VotingPlugin</artifactId>
             <version>6.6.2</version>
             <scope>system</scope>
